@@ -7,7 +7,7 @@ import Footer from "./componets/pages/Footer/Footer.jsx";
 import NotFound from "./componets/pages/NonPage/NotFound.jsx";
 import ErrorBoundaryCustom from "./componets/pages/NonPage/ErrorBoundary.jsx";
 
-export default function App (props) {
+export default function App () {
 	return (
 			
 				<>

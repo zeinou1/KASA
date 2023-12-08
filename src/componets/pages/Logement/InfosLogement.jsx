@@ -1,10 +1,9 @@
 import "../../../styles/Logement.css"
 import donnee from '../../../datas/logements.json'
-import {Navigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import Rating from "./Rating.jsx";
 import Carrousel from "./Carousel.jsx";
 import GestionAffichage from "./GestionAffichage.jsx";
-import ErrorBoundaryCustom from "../NonPage/ErrorBoundary.jsx";
 
 
 
