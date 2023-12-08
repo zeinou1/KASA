@@ -4,6 +4,8 @@ import {Navigate, useParams} from "react-router-dom";
 import Rating from "./Rating.jsx";
 import Carrousel from "./Carousel.jsx";
 import GestionAffichage from "./GestionAffichage.jsx";
+import ErrorBoundaryCustom from "../NonPage/ErrorBoundary.jsx";
+
 
 
 export default function InfosLogement () {
@@ -25,9 +27,12 @@ export default function InfosLogement () {
 	
 	
 	return (
+
 			<>
 				{
-					DaTa ? (
+					//DaTa ? (
+							
+							/*Gestion Erreur*/
 							<>
 								<header>
 									<Carrousel images={DaTa.pictures}
@@ -63,12 +68,14 @@ export default function InfosLogement () {
 									<GestionAffichage/>
 								</main>
 							</>
-					
-					) : (<Navigate to="/NonPage"/>)
+					    /*End gestion erreur*/
+						
+					//) : (<Navigate to="/NonPage"/>)
 				}
 			
 			
 			</>
+
 	)
 			;
 }
