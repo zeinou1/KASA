@@ -1,0 +1,62 @@
+.Banner {
+    position: relative;
+    height: 6.9375rem;
+    margin: 0 auto 2.37rem;
+    padding: 1.3rem;
+
+
+}
+
+.Banner__img {
+    height: 6.9375rem;
+    border-radius: 0.625rem;
+}
+.Banner__infos{
+    position: relative;
+    color: white;
+    z-index: 99;
+    font-size: 1.5rem;
+    top: -5rem;
+    left: 1rem;
+    width: 15.5rem;
+    background-color: transparent;
+
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .Banner__infos{
+        left: 28%;
+        right: 50%;
+        width: 30.5rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .Banner {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+    .Banner__img {
+        border-radius: 17px;
+        height: 13rem;
+
+    }
+
+
+    .Banner__infos {
+        left: 24%;
+        right: 50%;
+        top: -10rem;
+        color: white;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        width: 44rem;
+
+    }
+    .Banner-cover{
+
+
+
+    }
+
+}

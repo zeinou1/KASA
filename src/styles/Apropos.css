@@ -1,0 +1,153 @@
+
+.Banner-apropos {
+    height: 223px;
+width: 100%;
+    margin: 23px auto 0;
+    padding: 2rem;
+}
+
+.image-apropos {
+    height: 223px;
+    border-radius: 17px;
+
+}
+
+/**/
+.Liste-banner {
+    height: 1345px;
+}
+
+/******************************
+*****************************
+Mise en forme apropos
+*******************************
+*******************************/
+/*animate*/
+@keyframes apropos-animate {
+    from {
+        transform: translatey(-6rem);
+    }
+    to {
+        transform: translatey(0);
+    }
+}
+/*End animate*/
+.main{
+    padding:2rem;
+}
+.apropos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+    margin: 1.88rem auto;
+}
+
+.apropos__liste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+
+}
+
+.apropos__title {
+    font-weight: 500;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 0.3125rem;
+    background: #FF6060;
+    padding: 0.625rem 1.25rem 0.625rem 0.9375rem;
+    color: white;
+
+}
+
+.apropos__chevron {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    cursor: pointer;
+}
+/****************************
+*****************************
+Mise en forme paragraphe a propos
+*****************************
+*****************************/
+/*animate apropos-B*/
+@keyframes apropos-animate {
+    from {
+        transform: translatey(-3rem);
+    }
+    to {
+        transform: translatey(0);
+    }
+}
+/*End animate*/
+.apropos__B {
+    color: #FF6060;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%;
+    margin: -.2rem auto 0.6rem;
+    z-index: -1;
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 1rem 4rem 4rem 1rem;
+    border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
+    position: relative;
+    /*Animation*/
+    animation: apropos-animate 1200ms ease-in-out forwards;
+
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+
+
+
+
+    /**/
+    .Liste-banner {
+        height: 1345px;
+    }
+
+    /******************************
+    *****************************
+    Mise en forme apropos
+    *******************************
+    *******************************/
+    .apropos {
+
+        padding: 0.625rem 11.25rem 0.625rem 11.25rem;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .apropos__title {
+        font-weight: 500;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        border-radius: 0.3125rem;
+        background: #FF6060;
+        padding: 0.625rem 1.25rem 0.625rem 0.9375rem;
+        color: white;
+
+    }
+
+    /****************************
+    *****************************
+    Mise en forme paragraphe a propos
+    *****************************
+    *****************************/
+
+}
