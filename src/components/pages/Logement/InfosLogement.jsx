@@ -11,40 +11,42 @@ import GestionAffichage from "./GestionAffichage.jsx";
 
 export default function InfosLogement () {
 	const {id} = useParams()
+	// recupération Des données et les affichées via leurs IDS
 	const DaTa = donnee.find((logement) => logement.id === id);
 	
-	// Recuperation des Tags
-	const TaGs = DaTa?.tags.map((tag, i) => {
-		return (
-				<ul key={i}>
-					<li>{tag}</li>
-				</ul>
-		);
-	});
-	
+	//function Recuperation des Tags
+		const {tags} = DaTa;
+ 
 	return (
 
 			<>
-				{
-				
-							<>
+				{<>
 								<header>
 									<Carrousel images={DaTa.pictures}
-									           
-									
 									/>
 								</header>
-							
 								<main className="Logement__main">
 									<h1>
 										{DaTa.title}
 									</h1>
+									
 									<p className='Logement__region'>{DaTa.location}</p>
-									
-									
 									<div className="Logement__Infos">
-										<div className="Logement__critere">
-											{TaGs}
+										<div>
+											{/*Recupération des tags*/}
+											{
+											<ul  className="Logement__critere">
+												 { tags.map((tag, i) => (
+														 <li key={tag.toString()}>
+															 {tag}
+														 </li>
+												 ))
+													
+												 }
+											</ul>
+											
+											
+											}
 										</div>
 										<>
 											<div className="Logement__Proprio">

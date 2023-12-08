@@ -3,10 +3,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
 import {faAngleUp, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import "../../../styles/Apropos.css"
-import {Fiabilite, Respect, Securite, Service} from "./Apropos.jsx";
+import {Fiabilite, Respect, Securite, Service} from "./Infos-Apropos.jsx";
 
 
-function App_propos () {
+function App_Apropos () {
 	const [Viable, setViable] = useState(false)
 	const [Respecte, setRespecte] = useState(false)
 	const [ServiceA, setServiceA] = useState(false)
@@ -92,4 +92,4 @@ function App_propos () {
 	)
 }
 
-export default App_propos;
+export default App_Apropos;
