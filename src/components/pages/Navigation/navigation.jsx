@@ -13,7 +13,7 @@ const Navigation = () => {
 						<li className="navbar_active ">Accueil</li>
 					</Link>
 					
-					<Link to="/App_propos" className="active">
+					<Link to="/App_Apropos" className="active">
 						<li className="navbar_active">A<span>Propos</span></li>
 					</Link>
 				</ul>

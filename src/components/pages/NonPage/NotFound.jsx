@@ -10,8 +10,8 @@ function NotFound () {
 					<p>
 						Oups! La page que vous demandez n'existe pas.
 					</p>
-					<Link to='/Accueil' className="NotFound__retour">
-						Retourner sur la page d’accue
+					<Link to='/' className="NotFound__retour">
+						Retourner sur la page d’accueil
 					</Link>
 				</div>
 			</div>
