@@ -21,7 +21,7 @@ class ErrorBoundaryCustom extends React.Component {
 		if(this.state.hasError) {
 			
 			return (
-					// retour page 404 en cas d'erreur
+					// retourne page 404 en cas d'erreur
 					<NotFound/>
 			);
 		}
