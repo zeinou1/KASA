@@ -4,6 +4,8 @@ import {useParams} from "react-router-dom";
 import Rating from "./Rating.jsx";
 import Carrousel from "./Carousel.jsx";
 import GestionAffichage from "./GestionAffichage.jsx";
+import ErrorBoundaryCustom from "../NonPage/ErrorBoundary.jsx";
+
 
 
 
