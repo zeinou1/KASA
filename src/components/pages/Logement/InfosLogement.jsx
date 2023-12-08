@@ -36,7 +36,7 @@ export default function InfosLogement () {
 											{/*Recupération des tags*/}
 											{
 											<ul  className="Logement__critere">
-												 { tags.map((tag, i) => (
+												 { tags.map((tag) => (
 														 <li key={tag.toString()}>
 															 {tag}
 														 </li>
