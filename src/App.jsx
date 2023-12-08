@@ -1,11 +1,11 @@
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import App_propos from "./componets/pages/Apropos/App_propos.jsx";
-import Accueil from "./componets/pages/Acceuil/Accueil.jsx";
-import InfosLogement from "./componets/pages/Logement/InfosLogement.jsx";
-import Navigation from "./componets/pages/Navigation/navigation.jsx";
-import Footer from "./componets/pages/Footer/Footer.jsx";
-import NotFound from "./componets/pages/NonPage/NotFound.jsx";
+import App_propos from "./components/pages/Apropos/App_propos.jsx";
+import Accueil from "./components/pages/Acceuil/Accueil.jsx";
+import InfosLogement from "./components/pages/Logement/InfosLogement.jsx";
+import Navigation from "./components/pages/Navigation/navigation.jsx";
+import Footer from "./components/pages/Footer/Footer.jsx";
+import NotFound from "./components/pages/NonPage/NotFound.jsx";
 export default function App () {
 	return (
 			
