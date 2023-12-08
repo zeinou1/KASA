@@ -14,7 +14,7 @@ export default function InfosLogement () {
 	// recupération Des données et les affichées via leurs IDS
 	const DaTa = donnee.find((logement) => logement.id === id);
 	
-	//function Recuperation des Tags
+	//Recuperation des Tags
 		const {tags} = DaTa;
  
 	return (
