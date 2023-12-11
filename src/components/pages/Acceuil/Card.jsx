@@ -3,7 +3,7 @@ import Data from '../../../datas/logements.json'
 import {Link} from "react-router-dom";
 
 
-function Card (props) {
+function Card () {
 	
 	
 	return (

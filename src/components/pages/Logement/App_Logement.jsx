@@ -47,7 +47,7 @@ export default function App_Logement () {
 												
 												<div className="Logement__Proprio_contact">
 													<p>{DaTa.host.name}<br/></p>
-													<img src={DaTa.host.picture} className="Logement__Proprio_photo"alt="image apropos"/>
+													<img src={DaTa.host.picture} className="Logement__Proprio_photo" alt="image apropos"/>
 												</div>
 											</div>
 										</>
