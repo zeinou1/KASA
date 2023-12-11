@@ -25,14 +25,12 @@ function Carrousel ({images}) {
 				{
 					images.map((image, index) => {
 						return (
-								
 								<div key={index}
-								
 								>
-									
 									{ index === State && (
-													<img src={image} alt="img-appartement" className="Logement__pictures"
+													<img src={image} className="Logement__pictures"
 													     style= {{
+																 //Animation carrousel
 														     animation: `Animate${animate === 'left' ? 'Left' : 'Right'} .7s ease-in backwards` ,
 													     }}
 													/>
@@ -72,6 +70,5 @@ function Carrousel ({images}) {
 }
 
 export default Carrousel;
-/*https://medium.com/@lou.augey/react-intercepter-les-erreurs-javascript-avec-les-error-boundaries-6e4966d9b0f7*/
-/*https://fr.legacy.reactjs.org/docs/error-boundaries.html*/
+
 

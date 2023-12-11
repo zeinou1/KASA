@@ -2,14 +2,14 @@ import "../../../styles/Logement.css"
 import donnee from '../../../datas/logements.json'
 import {useParams} from "react-router-dom";
 import Rating from "./Rating.jsx";
-import Carrousel from "./Carousel.jsx";
+import Carrousel from "./Carrousel.jsx";
 import GestionAffichage from "./GestionAffichage.jsx";
 
 
 
 
 
-export default function InfosLogement () {
+export default function App_InfosLogement () {
 	const {id} = useParams()
 	// recupération Des données et les affichées via leurs IDS
 	const DaTa = donnee.find((logement) => logement.id === id);
@@ -50,12 +50,12 @@ export default function InfosLogement () {
 										</div>
 										<>
 											<div className="Logement__Proprio">
-												{/* Rating */}
+												{/* Rating (props) avis*/}
 												<Rating scaleValue={DaTa.rating}/>
 												
 												<div className="Logement__Proprio_contact">
 													<p>{DaTa.host.name}<br/></p>
-													<img src={DaTa.host.picture} className="Logement__Proprio_photo" alt="Photo propriov"/>
+													<img src={DaTa.host.picture} className="Logement__Proprio_photo" />
 												</div>
 											</div>
 										
