@@ -7,6 +7,7 @@ function Desc () {
 	const DaTa = donnee.find((logement) => logement.id === id);
 	return (
 					<p className="Logement__descrption_affichage">
+						{/* collapse description*/}
 						{DaTa.description}
 					</p>
 			

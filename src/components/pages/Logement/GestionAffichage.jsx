@@ -11,7 +11,7 @@ export default function GestionAffichage () {
 	
 	return (
 			<div className="Logement">
-				{/*Affichage description*/}
+				{/*GestionAffichage description*/}
 				<div className="Logement__descrption">
 					<h2 className='Logement__descrption_h2'>Description</h2>
 					
@@ -23,7 +23,7 @@ export default function GestionAffichage () {
 						{Show && <Desc/>}
 					
 				</div>
-				{/*Affichage Equipement*/}
+				{/*Gestion Affichage Equipement */}
 				<div className='Logement__equipement'>
 			    <h2 className='Logement__equipemen_h2'> Equipement</h2>
 					

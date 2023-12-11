@@ -8,30 +8,28 @@ function Carrousel ({images}) {
 	const [animate, setAnimate] = useState('left')
 	const handleNext = () => {
 		setState(State === images.length - 1 ? 0 : State + 1);
-		setAnimate('right')
+		setAnimate('Right')
 	};
 	
 	const handlePrevious = () => {
 		setState(State === 0 ? images.length - 1 : State - 1);
-		setAnimate('left')
+		setAnimate('Left')
 		
 		
 	};
 	
 	return (
-			<div className='Logement__Banner'
-			
-			>
+			<div className='Logement__Banner'>
 				{
 					images.map((image, index) => {
 						return (
 								<div key={index}
 								>
 									{ index === State && (
-													<img src={image} className="Logement__pictures"
+													<img src={image} className="Logement__pictures" alt="image carrousel"
 													     style= {{
 																 //Animation carrousel
-														     animation: `Animate${animate === 'left' ? 'Left' : 'Right'} .7s ease-in backwards` ,
+														     animation: `Animate${animate === 'Left' ? 'Left' : 'Right'} .7s ease-in backwards` ,
 													     }}
 													/>
 											)
@@ -39,21 +37,21 @@ function Carrousel ({images}) {
 									{
 											images.length > 1 && (
 													<span className="Logement__Number">
+																{/* Nb Img Carrousel */}
                 {State + 1}/{images.length}
               </span>
 											)
 									}
 									
-									{/* arrow*/}
+									{/* arrow left */}
 									{images.length > 1 && (
 											<FontAwesomeIcon
 													icon={faAngleLeft}
 													className="Angle-left"
 													onClick={handlePrevious}
-											
 											/>
 									)}
-									
+									{/* arrow right */}
 									{images.length > 1 && (
 											<FontAwesomeIcon
 													icon={faAngleRight}

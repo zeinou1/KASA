@@ -1,7 +1,7 @@
 import logo from "../../../assets/logo.png"
 //import '../../../styles/Nav.css';
 import {Link} from "react-router-dom";
-import '../../../styles/Nav-mobile.css';
+import '../../../styles/Nav.css';
 
 const Navigation = () => {
 	return (

@@ -1,4 +1,4 @@
-import BannerAp from "./BannerAp.jsx";
+import BannerApropos from "./Banner-Apropos.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
 import {faAngleUp, faChevronDown} from "@fortawesome/free-solid-svg-icons";
@@ -14,19 +14,20 @@ function App_Apropos () {
 	return (
 			<>
 				<>
-					<BannerAp/>
+					<BannerApropos/>
 				</>
 				
 				
 				<main className="main">
 					<div className="apropos">
+						{/* collapse Récupération des informations page apropos (fiabilité)*/}
 						<article className="apropos__liste">
 							<h2 className="apropos__title">
 								Fiabilité
 							</h2>
 							
 							
-							{Viable ? (
+							{ Viable ? (
 											(<FontAwesomeIcon onClick={() => setViable(!Viable)} icon={faChevronDown}
 											                  className="apropos__chevron"/>)
 									
@@ -37,8 +38,7 @@ function App_Apropos () {
 							
 							{Viable && <Fiabilite/>}
 						</article>
-						
-						
+						{/* collapse Récupération des informations page apropo (respect)*/}
 						<article className="apropos__liste">
 							<h2 className="apropos__title"> Respect
 							</h2>
@@ -54,7 +54,7 @@ function App_Apropos () {
 							{Respecte && <Respect/>}
 						
 						</article>
-						
+						{/* collapseRécupération des informations page apropos(Services)*/}
 						<article className="apropos__liste">
 							<h2 className="apropos__title"> Service
 							</h2>
@@ -69,7 +69,7 @@ function App_Apropos () {
 							
 							{ServiceA && <Service/>}
 						</article>
-						
+						{/* collapse Récupération des informations page apropos(sécurité) */}
 						
 						<article className="apropos__liste">
 							<h2 className="apropos__title"> Sécurité </h2>

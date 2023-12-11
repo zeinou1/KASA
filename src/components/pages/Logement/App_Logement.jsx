@@ -5,11 +5,7 @@ import Rating from "./Rating.jsx";
 import Carrousel from "./Carrousel.jsx";
 import GestionAffichage from "./GestionAffichage.jsx";
 
-
-
-
-
-export default function App_InfosLogement () {
+export default function App_Logement () {
 	const {id} = useParams()
 	// recupération Des données et les affichées via leurs IDS
 	const DaTa = donnee.find((logement) => logement.id === id);
@@ -40,12 +36,8 @@ export default function App_InfosLogement () {
 														 <li key={tag.toString()}>
 															 {tag}
 														 </li>
-												 ))
-													
-												 }
+												 ))}
 											</ul>
-											
-											
 											}
 										</div>
 										<>
@@ -55,10 +47,9 @@ export default function App_InfosLogement () {
 												
 												<div className="Logement__Proprio_contact">
 													<p>{DaTa.host.name}<br/></p>
-													<img src={DaTa.host.picture} className="Logement__Proprio_photo" />
+													<img src={DaTa.host.picture} className="Logement__Proprio_photo"alt="image apropos"/>
 												</div>
 											</div>
-										
 										</>
 									</div>
 									<GestionAffichage/>

@@ -3,7 +3,7 @@ import Data from '../../../datas/logements.json'
 import {Link} from "react-router-dom";
 
 
-function Card () {
+function Card (props) {
 	
 	
 	return (
@@ -15,7 +15,8 @@ function Card () {
 						
 								<article key={logement.id} className="card_article article">
 									<Link to={`/Logement/${logement.id}`}>
-									<img src={logement.cover} alt="" className="card_cover"/>
+										{/* Récupération et affichage des logements accueil*/}
+									<img src={logement.cover} alt={logement.title} className="card_cover"/>
 									</Link>
 									<p className="card_title">
 				

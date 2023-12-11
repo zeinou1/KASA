@@ -7,19 +7,16 @@ function EquipeMent () {
 	const DaTa = donnee.find((logement) => logement.id === id);
 	const Equipement = DaTa?.equipments.map((equipment, i) => {
 		return (
-				<ul key={i}>
-					<li>{equipment}</li>
-				</ul>
+				<li key={i}>
+					{equipment}
+				</li>
 		);
 	});
 	return (
-			
-			
 			<ul className="Logement__descrption_equipement">
+				{/* collapse équipements*/}
 				{Equipement}
 			</ul>
-	
-	
 	)
 }
 
