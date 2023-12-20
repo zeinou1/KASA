@@ -1,6 +1,7 @@
-import '../../../styles/Logement.css'
+import '../../styles/Logement.scss'
 import {useParams} from "react-router-dom";
-import donnee from "../../../datas/logements.json";
+import donnee from "../../datas/logements.json";
+
 
 function EquipeMent () {
 	const {id} = useParams()

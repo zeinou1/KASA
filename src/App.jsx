@@ -1,48 +1,35 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import App_Apropos from "./components/pages/Apropos/App_Apropos.jsx";
-import Accueil from "./components/pages/Acceuil/Accueil.jsx";
-import App_Logement from "./components/pages/Logement/App_Logement.jsx";
-import Navigation from "./components/pages/Navigation/navigation.jsx";
-import Footer from "./components/pages/Footer/Footer.jsx";
-import NotFound from "./components/pages/NonPage/NotFound.jsx";
-import ErrorBoundaryCustom from "./components/pages/NonPage/ErrorBoundary.jsx";
+import Index from "./components/Home/index.jsx";
+import ErrorBoundaryCustom from "./components/NonPage/ErrorBoundary.jsx";
+import PageLogement from "./pages/Logement/index.jsx";
+import Footer from "./components/Footer/index.jsx";
+import Navigation from "./components/Navigation/index.jsx";
+import AproposIndex from "./pages/Apropos/index.jsx";
+import Error from "./components/NonPage/index.jsx";
 
-export default function App () {
-	return (
-			
-			<>
-				
-				<BrowserRouter>
-					<Navigation/>
-					<Routes>
-						<Route path="/" element={<Accueil/>}/>
-						<Route path="/Accueil" element={
-							/**
-							 * 		//Gestion erreur avec ErrorBoundary
-							 **/
-							<ErrorBoundaryCustom>
-								<Accueil/>
-							</ErrorBoundaryCustom>
-						}/>
-						<Route path="/App_Apropos" element={
-							<ErrorBoundaryCustom>
-								<App_Apropos/>
-							</ErrorBoundaryCustom>
-						}/>
-						<Route path="/logement/:id" element={
-							
-							<ErrorBoundaryCustom>
-								<App_Logement/>
-							</ErrorBoundaryCustom>
-						}/>
-						
-						<Route path="*" element={<NotFound/>}/>
-					</Routes>
-					<Footer/>
-				</BrowserRouter>
-			
-			</>
-	
-	
-	)
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Navigation/>
+            <ErrorBoundaryCustom>
+                <Routes>
+                    <Route path="/" element={
+                        <Index/>
+                    }/>
+                    <Route path="/AproposIndex" element={
+                        <AproposIndex/>
+                    }/>
+                    <Route path="/logement/:id" element={
+                        <ErrorBoundaryCustom>
+                            <PageLogement/>
+                        </ErrorBoundaryCustom>
+                    }/>
+                    <Route path="*" element={
+                        <Error/>
+                    }/>
+                </Routes>
+            </ErrorBoundaryCustom>
+            <Footer/>
+        </BrowserRouter>
+    )
 }

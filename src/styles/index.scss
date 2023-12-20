@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,100&family=Shrikhand&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  min-width: 320px;
+  margin: auto;
+  height: auto;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Variable*/
+$Appcolors: (
+        "HomeColor" :#f6f6f6,
+        "ColorTitle" : #FFF,
+        "NavColor" : #FF6060,
+)
