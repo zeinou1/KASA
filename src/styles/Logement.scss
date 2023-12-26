@@ -1,0 +1,398 @@
+/*Banner Infos Logement*/
+/*animate*/
+@keyframes AnimateLeft {
+  from {
+    transform: translatex(0);
+
+  }
+  to {
+    transform: translatex(-100%);
+
+
+  }
+
+}
+
+@keyframes AnimateRight {
+  from {
+    transform: translateX(0);
+
+
+  }
+  to {
+    transform: translateX(100%);
+
+  }
+
+}
+
+/*Animation*/
+@keyframes Desc-animate {
+  from {
+    transform: translatey(-6rem);
+  }
+  to {
+    transform: translatey(0);
+  }
+}
+
+.Logement {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 1rem;
+  width: 100%;
+  gap: 3rem;
+
+  @media only screen and (min-width: 1025px) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+    gap: 3rem;
+  }
+
+
+  &__Banner {
+    width: 100%;
+    padding: 1.3rem;
+    position: relative;
+    height: 15.9375rem;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 1025px) {
+      /*Banner Infos Logement*/
+      width: 100%;
+      padding: 2rem;
+      position: relative;
+      height: 25.9375rem;
+      margin-bottom: 2.88rem;
+    }
+  }
+
+  &__pictures {
+    border-radius: 1.5625rem;
+    height: 15.9375rem;
+
+    @media only screen and (min-width: 1025px) {
+      border-radius: 1.5625rem;
+      height: 25.9375rem;
+    }
+  }
+
+  &__main {
+    /**/
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    width: 100%;
+
+    h1 {
+      font-size: 1.125rem;
+      color: #ff6060;
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        font-size: 1.70rem;
+      }
+    }
+
+    @media only screen and (min-width: 1025px) {
+
+      padding: 2rem;
+      width: 100%;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+
+  }
+
+  &__Infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media only screen and (min-width: 1025px) {
+      flex-direction: row;
+
+    }
+  }
+
+  /*Contact*/
+  &__Proprio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+
+    p {
+      color: #ff6060;
+
+    }
+
+    /*Tablet*/
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      gap: 17rem;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      flex-direction: column-reverse;
+      margin-top: -3.3rem;
+      width: 8.8rem;
+      gap: 6rem;
+    }
+
+  }
+
+  &__avis_p {
+    width: 16.125rem;
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      width: 100%;
+    }
+    @media only screen and (min-width: 1025px) {
+      width: 10.6rem;
+      height: 2.25rem;
+      margin-top: -5rem;
+    }
+  }
+
+  &__Proprio_photo {
+    color: #c4c4c4;
+    border-radius: 50%;
+    width: 3rem;
+    /*Tablet*/
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      width: 8rem;
+      margin-top: -0.20rem;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      width: 4rem;
+      margin-top: -0.20rem;
+    }
+  }
+
+  &__Proprio_contact {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    gap: 0.885625rem;
+    p {
+      /* width: 6.8125rem; */
+      font-size: 0.75rem;
+      /*Tablet*/
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        font-size: 1.25rem;
+      }
+      @media only screen and (min-width: 1025px) {
+        color: #ff6060;
+        font-size: 1.2rem;
+        width: 5.8125rem;
+
+      }
+    }
+
+    @media only screen and (min-width: 1025px) {
+
+          width: 100%;
+    }
+  }
+
+  /*Localisation*/
+  &__region {
+    color: #ff6060;
+    font-size: 0.875rem;
+    /*Tablet*/
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      font-size: 1.20rem;
+    }
+
+    @media only screen and (min-width: 1025px) {
+      color: #ff6060;
+      height: 26px;
+      font-size: 1.60rem;
+      font-weight: 500;
+
+    }
+  }
+
+  /*Critère*/
+  &__critere {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin-top: 1rem;
+
+    ul {
+      display: flex;
+
+    }
+
+    li {
+      width: 7.1875rem;
+      height: 1.5625rem;
+      background-color: #ff6060;
+      border-radius: 10px;
+      padding: 4px;
+      color: white;
+      font-size: 0.625rem;
+      text-align: center;
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        font-size: 0.70rem;
+      }
+      @media only screen and (min-width: 1025px) {
+        font-size: 0.875rem;
+      }
+    }
+
+
+  }
+
+  /*Avis*/
+  &__tags {
+    width: 1.125rem;
+    @media only screen and (min-width: 1025px) {
+      /*Avis*/
+      width: initial;
+    }
+
+  }
+
+
+  /*FaAngle carousel*/
+  &__Angle-left {
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 1.5rem;
+    position: absolute;
+    top: 9rem;
+    color: white;
+    cursor: pointer;
+    @media only screen and (min-width: 1025px) {
+      /*FaAngle carousel*/
+      height: 79px;
+      width: 47px;
+      top: 12rem;
+      left: 2.3rem;
+    }
+
+
+  }
+
+  &__Angle-right {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    right: 1.5em;
+    position: absolute;
+    top: 9rem;
+    color: white;
+    z-index: 99;
+    @media only screen and (min-width: 1025px) {
+      height: 79px;
+      width: 47px;
+      top: 12rem;
+      right: 2.3em;
+    }
+  }
+
+  /*Numérotation*/
+  &__Number {
+    height: 32px;
+    width: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  /***************************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                         ****************************
+            Mise en forme de description et equipement
+  ****************************
+  ****************************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+  &__descrption,
+  &__equipement {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    overflow: hidden;
+
+
+  }
+
+  &__equipemen_h2,
+  &__descrption_h2 {
+
+    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+    border-radius: 0.625rem;
+    background: #FF6060;
+    color: white;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    z-index: 99;
+    overflow: auto;
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      font-size: 1.30rem;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  &__equipemen_chevron-Down,
+  &__equipemen_chevron-Up {
+    position: absolute;
+    color: white;
+    top: .2rem;
+    right: .6rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 101;
+  }
+
+  /*Collapse*/
+  &__descrption_affichage,
+  &__descrption_equipement {
+    padding: 1.375rem 1.25rem 1.25rem 1.25rem;
+    color: #ff6060;
+    background-color: var(--gray);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 142.6%;
+    border-radius: 0.3125rem;
+    margin-top: -.2rem;
+    margin-bottom: 2rem;
+    z-index: -1;
+    position: relative;
+    animation: Desc-animate 1000ms ease-in-out forwards;
+
+    li {
+      font-size: 1.125rem;
+      font-weight: 400;
+      @media only screen and (min-width: 1025px) {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 142.6%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+

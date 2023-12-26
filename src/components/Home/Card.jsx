@@ -1,11 +1,9 @@
-import '../../../styles/Card.css'
-import Data from '../../../datas/logements.json'
+import '../../styles/Card.scss'
+import Data from '../../datas/logements.json'
 import {Link} from "react-router-dom";
 
 
 function Card () {
-	
-	
 	return (
 			<>
 			
@@ -15,7 +13,7 @@ function Card () {
 						
 								<article key={logement.id} className="card_article article">
 									<Link to={`/Logement/${logement.id}`}>
-										{/* Récupération et affichage des logements accueil*/}
+										{/* Récupération et affichage des logements niveau accueil*/}
 									<img src={logement.cover} alt={logement.title} className="card_cover"/>
 									</Link>
 									<p className="card_title">

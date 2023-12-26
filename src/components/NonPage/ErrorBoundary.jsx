@@ -1,4 +1,4 @@
-import NotFound from "./NotFound.jsx";
+import Index from "./index.jsx";
 import React from "react";
 
 class ErrorBoundaryCustom extends React.Component {
@@ -21,8 +21,8 @@ class ErrorBoundaryCustom extends React.Component {
 		if(this.state.hasError) {
 			
 			return (
-					// retourne page 404 en cas d'erreur
-					<NotFound/>
+					// retourne page 404
+					<Index />
 			);
 		}
 		

@@ -1,0 +1,64 @@
+////////////
+// *NavBar Mobile First*/
+// ////////:
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: .8rem 2rem;
+  margin: 1rem auto;
+
+  &_navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+    width: 11rem;
+    /*Teblet*/
+    @media (min-width: 767px) and (max-width: 1199px) {
+      width: 20rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1025px) {
+      width: 20rem;
+    }
+
+    &_li, a {
+      color: #ff6060;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 500;
+      cursor: pointer;
+      /*Teblet*/
+      @media (min-width: 767px) and (max-width: 1199px) {
+        font-size: 1.25rem;
+      }
+      /*Desktop*/
+      @media only screen and (min-width: 1025px) {
+        font-size: 1.35rem;
+      }
+
+    }
+  }
+
+  &_logo {
+    width: 9.0625rem;
+    /*Desktop*/
+    @media only screen and (min-width: 1025px) {
+      width: 13.14513rem;
+    }
+  }
+
+  &_active:hover, &_active:focus {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.108rem;
+    text-underline-offset: .29rem;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+}
+
