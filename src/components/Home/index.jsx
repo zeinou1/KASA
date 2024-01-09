@@ -3,6 +3,7 @@ import Card from "./Card.jsx";
 import banner_img from "../../assets/Banner-img.png";
 import '../../styles/HomeBanner.scss'
 
+
 export default function Index () {
 	return (
 			<>

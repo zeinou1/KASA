@@ -1,24 +1,23 @@
 import '../../styles/Logement.scss'
-import {useParams} from "react-router-dom";
-import donnee from "../../datas/logements.json";
 
-
-function EquipeMent () {
-	const {id} = useParams()
-	const DaTa = donnee.find((logement) => logement.id === id);
-	const Equipement = DaTa?.equipments.map((equipment, i) => {
+// eslint-disable-next-line react/prop-types
+function EquipeMent({DATA}) {
+	
+	// eslint-disable-next-line react/prop-types
+	const Equipement = DATA?.equipments.map((equipment, i) => {
 		return (
-				<li key={i}>
-					{equipment}
-				</li>
-		);
+			<li key={i}>
+				{equipment}
+			</li>);
 	});
+	
 	return (
-			<ul className="Logement__descrption_equipement">
-				{/* collapse équipements*/}
-				{Equipement}
-			</ul>
-	)
+		<ul className="Logement__descrption_equipement">
+			{/* collapse équipements*/}
+			{
+				Equipement
+			}
+		</ul>)
 }
 
 export default EquipeMent;
