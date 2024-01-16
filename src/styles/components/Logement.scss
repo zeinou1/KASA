@@ -252,13 +252,14 @@
     margin-top: 1rem;
     width: 100%;
     li {
+      width: 7rem;
       height: 1.5625rem;
       background-color: #ff6060;
       border-radius: 10px;
       padding: 4px;
       margin: 2px;
       color: white;
-      font-size: 0.625rem;
+      font-size: 0.6rem;
       text-align: center;
       @media only screen and (min-width: 601px) and (max-width: 1024px) {
         font-size: 0.7rem;
