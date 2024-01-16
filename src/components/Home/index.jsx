@@ -1,27 +1,15 @@
-import Card
-    from "./Card.jsx";
-import banner_img
-    from "../../assets/Banner-img.png";
-//import
-// '../../styles/components/HomeBanner.scss'
+import Card from "./Card.jsx";
+import banner_img from "../../assets/Banner-img.png";
 
 
 export default function Index() {
-    return (
-        <>
-            <header
-                className="Banner">
-                <img
-                    src={banner_img}
-                    alt="image"
-                    className="Banner__img"/>
-                <p className="Banner__infos">Chez
-                    vous,
-                    partout
-                    et
-                    ailleurs</p>
-            </header>
-            <Card/>
-        </>
-    );
+  return (
+    <>
+      <header className="Banner">
+        <img src={banner_img} alt="image" className="Banner__img" />
+        <p className="Banner__infos">Chez vous, partout et ailleurs</p>
+      </header>
+      <Card />
+    </>
+  );
 }

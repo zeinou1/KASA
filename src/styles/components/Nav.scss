@@ -6,7 +6,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
   margin: 1rem auto;
 
   &_navigation {
@@ -24,7 +24,8 @@
       width: 20rem;
     }
 
-    &_li, a {
+    &_li,
+    a {
       color: #ff6060;
       font-size: 0.75rem;
       font-style: normal;
@@ -38,7 +39,6 @@
       @media only screen and (min-width: 1025px) {
         font-size: 1.35rem;
       }
-
     }
   }
 
@@ -50,8 +50,8 @@
     }
   }
 
-  &_active:hover, &_active:focus {
-
+  &_active:hover,
+  &_active:focus {
     //text-decoration-line: underline;
     //text-decoration-thickness: 0.108rem;
     // text-underline-offset: .29rem;
@@ -85,10 +85,7 @@
       }
     }
   }
-
 }
 
 @media screen and (min-width: 1000px) {
-
 }
-
