@@ -1,0 +1,111 @@
+.ImgBanner {
+  height: 6.9375rem;
+  margin: 0 auto 7rem;
+  padding: 1.3rem;
+  width: 100%;
+  &__apropos {
+    height: 223px;
+    border-radius: 17px;
+  }
+}
+
+/******************************
+*****************************
+Mise en forme apropos
+*******************************
+*******************************/
+/*animate*/
+
+/*End animate*/
+.main {
+  padding: 1.3rem;
+}
+
+.apropos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  margin: 1.88rem auto;
+  /*Desktop*/
+  @media only screen and (min-width: 1025px) {
+    padding: 0.625rem 11.25rem 0.625rem 11.25rem;
+    justify-content: center;
+    width: 100%;
+  }
+  &__liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 0.75rem;
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      font-size: 1rem;
+    }
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0.8125rem;
+    border-radius: 0.3125rem;
+    background: #ff6060;
+    padding: 0.625rem 1.25rem 0.625rem 0.9375rem;
+    color: white;
+    /* Tablet*/
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      font-size: 1rem;
+    }
+    /* Desktop */
+    @media only screen and (min-width: 1025px) {
+      font-size: 1.65rem;
+    }
+  }
+  &__chevron {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  &__B {
+    color: #ff6060;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%;
+    margin: -0.2rem auto 0.6rem;
+    z-index: -1;
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 1rem 4rem 4rem 1rem;
+    border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
+    position: relative;
+    /*Animation*/
+    animation: apropos-animate 1200ms ease-in-out forwards;
+  }
+  @keyframes apropos-animate {
+    from {
+      transform: translatey(-6rem);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+  /*animate apropos-B*/
+  @keyframes apropos-animate {
+    from {
+      transform: translatey(-3rem);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+}
+
+/*End animate*/
