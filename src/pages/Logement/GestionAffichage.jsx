@@ -7,8 +7,8 @@ import EquipeMent from "./Equipement.jsx";
 // eslint-disable-next-line react/prop-types
 export default function GestionAffichage({ Donnee }) {
   const [ShowDescription, setShowDescription] = useState(false);
-  const [ShowEquiment, setShowEquipment] = useState(false);
-  const [animate, setAnimate] = useState();
+  const [ShowEquipment, setShowEquipment] = useState(false);
+
 
   return (
     <div className="Logement">
@@ -36,21 +36,21 @@ export default function GestionAffichage({ Donnee }) {
       <div className="Logement__equipement">
         <h2 className={"Logement__equipemen_h2"}> Equipement</h2>
 
-        {ShowEquiment ? (
+        {ShowEquipment ? (
           <FontAwesomeIcon
-            onClick={() => setShowEquipment(!ShowEquiment)}
+            onClick={() => setShowEquipment(!ShowEquipment)}
             icon={faChevronDown}
             className="Logement__equipemen_chevron-Down"
           />
         ) : (
           <FontAwesomeIcon
-            onClick={() => setShowEquipment(!ShowEquiment)}
+            onClick={() => setShowEquipment(!ShowEquipment)}
             icon={faAngleUp}
             className="Logement__equipemen_chevron-Up"
           />
         )}
 
-        {ShowEquiment && <EquipeMent DATA={Donnee} />}
+        {ShowEquipment && <EquipeMent DATA={Donnee} />}
       </div>
     </div>
   );

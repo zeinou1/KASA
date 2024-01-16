@@ -37,7 +37,7 @@ export default function PageLogement() {
               <>
                 <div className="Logement__Proprio">
                   {/* Rating (props) avis*/}
-                  <Rating scaleValue={DaTa.rating} />
+                  <Rating AvisLogement={DaTa.rating} />
 
                   <div className="Logement__Proprio_contact">
                     <div className="Logement__Proprio_contact_p">
